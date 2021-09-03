@@ -1,0 +1,11 @@
+package br.org.estudos.backend.model.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import br.org.estudos.backend.model.Usuario;
+
+public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
+	
+	public Usuario findByEmail(String email);
+
+}
